@@ -8,7 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function IndexPage() {
   return (
-    <main className="container grid max-w-prose items-center gap-6 space-y-4 pb-8 pt-6 text-balance md:py-10">
+    <main className="text-balance container grid max-w-prose items-center gap-6 space-y-4 pb-8 pt-6 md:py-10">
       <div className="flex min-h-[50vh] flex-col justify-center gap-3">
         <h1 className="text-5xl font-bold">{siteConfig.title}</h1>
         <p className="text-slate-500">{siteConfig.description}</p>

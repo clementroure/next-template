@@ -32,7 +32,7 @@
     --destructive-foreground: 210 40% 98%;
 
     --success: 120 100% 25%;
-    --success-foreground: 120 40% 98%; 
+    --success-foreground: 120 40% 98%;
 
     --ring: 215 20.2% 65.1%;
 
@@ -77,21 +77,23 @@
   * {
     @apply border-border;
   }
-  body,html {
-    @apply bg-background text-foreground antialiased min-h-screen;
-    font-feature-settings: "rlig" 1, "calt" 1;
+  body,
+  html {
+    @apply min-h-screen bg-background text-foreground antialiased;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
   }
 }
 
-
 body::-webkit-scrollbar-track {
   @apply bg-white dark:bg-black;
 }
 body::-webkit-scrollbar-thumb {
-  @apply bg-[#DCDCDC] dark:bg-gray-800 rounded-3xl;
+  @apply rounded-3xl bg-[#DCDCDC] dark:bg-gray-800;
 }
 
 body::-webkit-scrollbar {

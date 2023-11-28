@@ -7,7 +7,6 @@ import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/providers";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { Head } from "next/document";
 
 export const metadata: Metadata = {
   title: {
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     // images: [`${siteConfig.url}/og.jpg`],
     creator: "@a7med3bdulbaset",
-  }
+  },
 };
 
 interface RootLayoutProps {
